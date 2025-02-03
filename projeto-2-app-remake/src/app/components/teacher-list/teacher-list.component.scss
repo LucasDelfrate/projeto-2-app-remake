@@ -1,0 +1,56 @@
+/* Centralizando o conteúdo */
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+
+    .div-search{
+
+        .search-icon{
+            color: gray; 
+            cursor: pointer; 
+            height: 35px; 
+            align-items: 
+            center; display: flex;
+            &:hover{
+                font-size: 26px;
+            }
+        }
+    }
+
+  }
+  
+  /* Estilo da barra de pesquisa */
+  .search-bar {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #eeeeeea8;
+  }
+  
+  /* Estilo da lista de professores */
+  .professores-list {
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+  }
+  
+  .professor-item {
+    padding: 10px;
+    border: 1px solid #a8a8a8;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .professor-item div {
+    margin: 5px 0;
+  }
+  

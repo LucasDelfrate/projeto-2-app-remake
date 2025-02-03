@@ -1,0 +1,23 @@
+<div class="container">
+    <div style="display: flex; gap: 10px;" class="div-search">
+        <input 
+          type="text" 
+          [(ngModel)]="searchTerm" 
+          placeholder="Pesquisar por Ra do aluno..." 
+          class="search-bar" 
+        />
+        <mat-icon (click)="onSubmit()" class="search-icon">search</mat-icon>
+    </div>
+    <!-- Search Bar -->
+  
+    <!-- List of Professors -->
+    <div class="professores-list">
+      <div *ngFor="let professor of professores" class="professor-item">
+        <div><b>Nome do professor:</b> {{ professor.professor }}</div>
+        <div><b>Email do professor:</b> {{ professor.email }}</div>
+        <div><b>Lido</b> {{ professor.emailRead }}</div>
+        <div><b>Recebido</b> {{ professor.emailReveived }}</div>
+        <div><b>Data</b> {{ professor.date }}</div>
+      </div>
+    </div>
+  </div>

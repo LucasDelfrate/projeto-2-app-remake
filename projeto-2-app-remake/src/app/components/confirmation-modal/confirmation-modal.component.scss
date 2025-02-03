@@ -1,0 +1,51 @@
+
+
+
+.login-container {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    background-color: rgb(212, 212, 212);
+    flex-direction: column;
+
+    .nome-ra{
+      margin-bottom: 10px;
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    mat-card {
+      padding: 30px;
+      gap: 15px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+
+      mat-card-content{
+        display: flex;
+
+        form{
+          display: flex;
+          flex-direction: column;
+        gap: 10px;
+          button{
+            width: 100%;
+          }
+
+          .checkbox-container{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px 10px;
+          }
+          
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,30 @@
+<div class="login-container">
+    <div class="nome-ra">
+      <h3>Nome do aluno: {{ nomeAluno }}</h3>
+      <h3>Ra do aluno: {{ raAluno }}</h3>
+    </div>
+    <mat-icon (click)="closeDialogNull()" style="position: relative; top: -170px; right: -320px; cursor: pointer;">close</mat-icon>
+    <mat-card>
+      <mat-card-content>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <mat-form-field appearance="fill">
+            <mat-label>Nome</mat-label>
+            <input matInput placeholder="Digite seu nome" formControlName="nome" required>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" placeholder="Digite o email" formControlName="email" required>
+          </mat-form-field>
+          <div class="checkbox-container">
+            <mat-checkbox formControlName="recebido">Recebido</mat-checkbox>
+    
+            <mat-checkbox formControlName="lido">Lido</mat-checkbox>
+          </div>
+  
+          <button mat-raised-button color="primary" type="submit">Salvar</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  
