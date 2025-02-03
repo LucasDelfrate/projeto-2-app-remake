@@ -10,6 +10,7 @@
     text-align: center;
 
     .div-search{
+      padding: 15px;
 
         .search-icon{
             color: gray; 
@@ -40,6 +41,7 @@
     width: 80%;
     max-width: 800px;
     background-color: white;
+    overflow: auto;
   }
   
   .professor-item {
