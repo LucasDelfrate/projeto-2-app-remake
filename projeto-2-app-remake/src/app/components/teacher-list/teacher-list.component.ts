@@ -4,7 +4,7 @@ import { ConfirmationService } from 'src/app/services/confirmation.service';
 export type Professor = {
   email: string,
   emailRead: boolean,
-  emailReveived: boolean,
+  emailReceived: boolean,
   date: string,
   professor: string
 }
