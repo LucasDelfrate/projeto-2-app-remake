@@ -28,8 +28,8 @@ export class ConfirmationModalComponent implements OnInit {
       this.loginForm = this.fb.group({
         email: ['', [Validators.required, Validators.email]],
         nome: ['', Validators.required],
-        lido: [],
-        recebido: []
+        lido: [false],
+        recebido: [false]
       });
     }
     title = 'projeto-2-app-remake';
